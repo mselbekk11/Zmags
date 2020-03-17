@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Zmags Experiences</title>
+
+  <meta name="description" content="I'm a self taught Web Designer & Developer from London. I am currently working for a SaaS company called Zmags as a Solutions Engineer." />
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93900315-2"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-93900315-2');
+ </script>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="shortcut icon" href="https://res.cloudinary.com/mselbekk-com/image/upload/v1569173264/Group_ktxdlv.png" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Patua+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet">
+
+
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//c.zmags.com/static/styles.css" />
+
+  
+  
+
+
+
+  <script type="text/javascript">
+    // global varibles
+    var done = true,
+        fading_div = document.getElementById('fading_div'),
+        fade_in_button = document.getElementById('fade_in'),
+        fade_out_button = document.getElementById('fade_out');
+    
+    function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
+        fading_div.style.opacity = opacity_value / 100;
+        fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
+        if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
+            fading_div.style.display = 'block';
+        }
+        if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
+            done = true;
+        }
+        if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
+            fading_div.style.display = 'none';
+            done = true;
+        }
+    }
+    
+    // fade in button
+    fade_in_button.onclick = function () {
+        if (done && fading_div.style.opacity !== '1') {
+            done = false;
+            for (var i = 1; i <= 100; i++) {
+                setTimeout("function_opacity(" + i + ",'in')", i * 5);
+            }
+        }
+    };
+    
+    // fade out button
+    fade_out_button.onclick = function () {
+        if (done && fading_div.style.opacity !== '0') {
+            done = false;
+            for (var i = 100; i >= 1; i--) {
+                setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
+            }
+        }
+    };
+    alert (test);
+    </script>
+
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Zmags Experiences</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Performance</a></li>
+        <li><a href="buying-guide.html">Buying Guide</a></li>
+        <li><a href="seo.html">SEO</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div class="zmags-viewer-container" data-experience="5e70fdd0dbec831a28bf67f0"></div>
+<div class="zmags-viewer-container" data-experience="5e70ff4cdbec831a28bf69fc"></div>
+<div class="zmags-viewer-container" data-experience="5e7100dddbec831a28bf6b7b"></div>
+<div class="zmags-viewer-container" data-experience="5e71059adbec831a28bf701e"></div>
+<div class="zmags-viewer-container" data-experience="5e71067a534c0663d35ab75d"></div>
+  </section>
+  </body>
+
+  <script defer type="text/javascript"  src="//c.zmags.com/static/manifest.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/vendor.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/client.js"></script>
+
+</html>
