@@ -9,6 +9,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
+
+  <!-- JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- JS -->
+
+
+
  <!-- Global site tag (gtag.js) - Google Analytics -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93900315-2"></script>
  <script>
@@ -28,6 +39,10 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
+<!-- <link href="js/materialize.js" type="text/javascript">
+<link href="js/init.js.js" type="text/javascript">
+<link href="js/materialize.min.js" type="text/javascript"> -->
+
   <link rel="shortcut icon" href="https://res.cloudinary.com/mselbekk-com/image/upload/v1584481174/z_aw9bmt.png" type="image/x-icon" />
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -39,6 +54,9 @@
 
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//c.zmags.com/static/styles.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
   
   
@@ -89,10 +107,18 @@
     alert (test);
     </script>
 
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
 
 </head>
 <body>
-  <nav>
+
+
+  <!-- <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Zmags Experiences</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -101,7 +127,36 @@
         <li><a href="seo.html">SEO</a></li>
       </ul>
     </div>
+  </nav> -->
+
+
+  <nav class="nav-wrapper">
+      <!-- <div class="container"> -->
+        <a href="#" class="brand-logo">Zmags Experiences</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Performance</a></li>
+          <li><a href="buying-guide.html">Buying Guide</a></li>
+          <li><a href="seo.html">SEO</a></li>
+          <li><a href="#">Quiz</a></li>
+          <li><a href="#">ADA</a></li>
+        </ul>
+      <!-- </div> -->
   </nav>
+
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="index.html">Performance</a></li>
+      <li><a href="buying-guide.html">Buying Guide</a></li>
+      <li><a href="seo.html">SEO</a></li>
+      <li><a href="#">Quiz</a></li>
+      <li><a href="#">ADA</a></li>
+  </ul>
+
+
+
+
   <section>
     <div class="zmags-viewer-container" data-experience="5e709e9bdbec831a28bed240"></div>
 <div class="zmags-viewer-container" data-experience="5e70bbbb534c0663d35a3718"></div>
@@ -109,7 +164,12 @@
 <div class="zmags-viewer-container" data-experience="5e70cbd7534c0663d35a4dd4"></div>
   </section>
   </body>
+  
 
   <script defer type="text/javascript"  src="//c.zmags.com/static/manifest.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/vendor.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/client.js"></script>
+
+ 
+
+
 
 </html>
