@@ -4,172 +4,113 @@
 
   <title>Zmags Experiences</title>
 
-  <meta name="description" content="I'm a self taught Web Designer & Developer from London. I am currently working for a SaaS company called Zmags as a Solutions Engineer." />
+  <meta name="description" content="Zmags is a content creation tool used to create and publish experiences to your website" />
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
 
-  <!-- JS -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161420184-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161420184-1');
+</script>
+
+
+  
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="//c.zmags.com/static/styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="https://res.cloudinary.com/mselbekk-com/image/upload/v1584481174/z_aw9bmt.png" type="image/x-icon" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet"> -->
+ <!-- CSS  -->
+
+
+ <!-- JS -->
+ <script defer type="text/javascript"  src="//c.zmags.com/static/manifest.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/vendor.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/client.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <!-- JS -->
-
-
-
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93900315-2"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
- 
-   gtag('config', 'UA-93900315-2');
- </script>
- <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  
-
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-<!-- <link href="js/materialize.js" type="text/javascript">
-<link href="js/init.js.js" type="text/javascript">
-<link href="js/materialize.min.js" type="text/javascript"> -->
-
-  <link rel="shortcut icon" href="https://res.cloudinary.com/mselbekk-com/image/upload/v1584481174/z_aw9bmt.png" type="image/x-icon" />
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Patua+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap" rel="stylesheet">
-
-
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//c.zmags.com/static/styles.css" />
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-  
-  
-
-
-
-  <script type="text/javascript">
-    // global varibles
-    var done = true,
-        fading_div = document.getElementById('fading_div'),
-        fade_in_button = document.getElementById('fade_in'),
-        fade_out_button = document.getElementById('fade_out');
-    
-    function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
-        fading_div.style.opacity = opacity_value / 100;
-        fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
-        if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
-            fading_div.style.display = 'block';
-        }
-        if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
-            done = true;
-        }
-        if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
-            fading_div.style.display = 'none';
-            done = true;
-        }
-    }
-    
-    // fade in button
-    fade_in_button.onclick = function () {
-        if (done && fading_div.style.opacity !== '1') {
-            done = false;
-            for (var i = 1; i <= 100; i++) {
-                setTimeout("function_opacity(" + i + ",'in')", i * 5);
-            }
-        }
-    };
-    
-    // fade out button
-    fade_out_button.onclick = function () {
-        if (done && fading_div.style.opacity !== '0') {
-            done = false;
-            for (var i = 100; i >= 1; i--) {
-                setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
-            }
-        }
-    };
-    alert (test);
-    </script>
 
 <script>
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 </script>
+ <!-- JS -->
 
 
 </head>
 <body>
 
-
-  <!-- <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Zmags Experiences</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Performance</a></li>
-        <li><a href="buying-guide.html">Buying Guide</a></li>
-        <li><a href="seo.html">SEO</a></li>
-      </ul>
-    </div>
-  </nav> -->
-
-
+<div class="navbar-fixed">
   <nav class="nav-wrapper">
-      <!-- <div class="container"> -->
-        <a href="#" class="brand-logo">Zmags Experiences</a>
+    <!-- <div class="nav-container-small"> -->
+      <!-- <div class="container smallnav"> -->
+        <a href="/index.html" class="brand-logo">Zmags Experiences</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Performance</a></li>
-          <li><a href="buying-guide.html">Buying Guide</a></li>
-          <li><a href="seo.html">SEO</a></li>
-          <li><a href="#">Quiz</a></li>
-          <li><a href="#">ADA</a></li>
+          <li><a href="index.html">Experiences</a></li>
+          <li><a href="/code.html">Code</a></li>
         </ul>
+      </div>
       <!-- </div> -->
   </nav>
+</div>
 
   <ul class="sidenav" id="mobile-links">
-    <li><a href="index.html">Performance</a></li>
-      <li><a href="buying-guide.html">Buying Guide</a></li>
-      <li><a href="seo.html">SEO</a></li>
-      <li><a href="#">Quiz</a></li>
-      <li><a href="#">ADA</a></li>
+    <li><a href="/performance.html">Performance</a></li>
+      <li><a href="/buying-guide.html">Buying Guide</a></li>
+      <li><a href="/seo.html">SEO</a></li>
+      <li><a href="/quiz.html">Quiz</a></li>
+      <li><a href="/ada.html">ADA</a></li>
+      <li><a href="/code.html">Code</a></li>
   </ul>
 
 
-
-
   <section>
-    <div class="zmags-viewer-container" data-experience="5e709e9bdbec831a28bed240"></div>
-<div class="zmags-viewer-container" data-experience="5e70bbbb534c0663d35a3718"></div>
-<div class="zmags-viewer-container" data-experience="5e70c12c534c0663d35a405c"></div>
-<div class="zmags-viewer-container" data-experience="5e70cbd7534c0663d35a4dd4"></div>
+    <div class="container experiences">
+    <div class="wrapper-two">
+      <!-- <div class="box a"><a href="/performance.html" >Performance</a></div>
+      <div class="box b"><a href="/buying-guide.html" >Buying Guide</a></div>
+      <div class="box c"><a href="/seo.html">SEO</a></div>
+      <div class="box d"><a href="#" >Quiz</a></div>
+      <div class="box e"><a href="#" >ADA</a></div>
+      <div class="box e"><a href="#" >Unknown</a></div> -->
+
+      <a href="/performance.html"><div class="box a">Performance</div></a>
+      <a href="/buying-guide.html"><div class="box b">Buying Guide</div></a>
+      <a href="/seo.html"><div class="box c">SEO</div></a>
+      <a href="/quiz.html"><div class="box d">Quiz</div></a>
+      <a href="/ada.html"><div class="box e">ADA</div></a>
+      <!-- <a href="#"><div class="box e">Unknown</div></a> -->
+
+    </div>
+  </div>
   </section>
+
+
   </body>
-  
-
-  <script defer type="text/javascript"  src="//c.zmags.com/static/manifest.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/vendor.js"></script><script defer type="text/javascript"  src="//c.zmags.com/static/client.js"></script>
-
- 
 
 
+
+  <footer>
+
+
+
+
+  </footer>
 
 </html>
+
